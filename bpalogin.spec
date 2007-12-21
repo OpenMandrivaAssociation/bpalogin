@@ -10,6 +10,7 @@ Source0: http://bpalogin.sourceforge.net/download/%{name}-%{version}.tar.bz2
 License: GPL
 Group: System/Servers
 Url: http://bpalogin.sourceforge.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires(post): rpm-helper
 Requires(preun): rpm-helper
 
