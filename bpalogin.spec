@@ -7,6 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://bpalogin.sourceforge.net/download/%{name}-%{version}.tar.bz2
+Patch0: bpalogin-2.0.2-fix-str-fmt.patch
 License: GPL
 Group: System/Servers
 Url: http://bpalogin.sourceforge.net/
@@ -23,14 +24,16 @@ maintained by William Rose and others based at SourceForge.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
+%serverbuild
 %configure2_5x
 %make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
