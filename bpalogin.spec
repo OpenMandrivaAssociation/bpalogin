@@ -1,6 +1,6 @@
 %define name bpalogin
 %define version 2.0.2
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: Client for Telstra's Big Pond Advance cable connections
 Name: %{name}
