@@ -1,0 +1,14 @@
+--- unixmain.c~	2003-04-30 10:07:33.000000000 +0200
++++ unixmain.c	2009-04-07 09:07:49.000000000 +0200
+@@ -114,9 +114,9 @@
+     va_start(ap,s);
+     vsprintf(buf,s,ap);
+     if(dosyslog)
+-    syslog(LOG_CRIT,buf);
++    syslog(LOG_CRIT,"%s",buf);
+     else
+-    printf(buf);
++    printf("%s",buf);
+     va_end(ap);
+ }
+ 
