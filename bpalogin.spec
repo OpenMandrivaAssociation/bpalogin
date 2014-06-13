@@ -1,7 +1,7 @@
 Summary:	Client for Telstra's Big Pond Advance cable connections
 Name:		bpalogin
 Version:	2.0.2
-Release:	16
+Release:	17
 License:	GPLv2
 Group:		System/Servers
 Url:		http://bpalogin.sourceforge.net/
