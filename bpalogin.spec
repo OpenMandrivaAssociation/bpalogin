@@ -4,7 +4,7 @@ Version:	2.0.2
 Release:	22
 License:	GPLv2
 Group:		System/Servers
-Url:		http://bpalogin.sourceforge.net/
+Url:		https://bpalogin.sourceforge.net/
 Source0:	http://bpalogin.sourceforge.net/download/%{name}-%{version}.tar.bz2
 Patch0:		bpalogin-2.0.2-fix-str-fmt.patch
 Requires(post,preun):	rpm-helper
