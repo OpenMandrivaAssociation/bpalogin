@@ -9,6 +9,11 @@ Source0:	http://bpalogin.sourceforge.net/download/%{name}-%{version}.tar.bz2
 Patch0:		bpalogin-2.0.2-fix-str-fmt.patch
 Requires(post,preun):	rpm-helper
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 BPALogin is a replacement for the Telstra supplied client for
 connecting and using Telstra's Big Pond Advance powered by Cable. The
